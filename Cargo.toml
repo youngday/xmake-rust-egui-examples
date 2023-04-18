@@ -4,5 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-eframe="0.21"
+eframe = { version = "0.21", features = ["glow"] }
+egui_extras = { version = "0.21", features = ["svg","image"] }
+image = { version = "0.24", default-features = false, features = ["png"] }
+egui_glow = "0.21"
+glow = "0.12"
+rfd = "0.11"  # file dialog
+itertools = "0.10.3"
 
